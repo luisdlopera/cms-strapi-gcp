@@ -1,0 +1,18 @@
+project_id      = "REPLACE_WITH_YOUR_GCP_PROJECT_ID"
+region          = "us-central1"
+enable_gcp      = false
+container_image = "us-central1-docker.pkg.dev/REPLACE_WITH_YOUR_GCP_PROJECT_ID/cms/strapi:latest"
+database_name   = "strapi"
+database_user   = "strapi_app"
+
+# Keep enable_gcp=false while preparing this file.
+# Replace each placeholder with a unique secret before setting enable_gcp=true.
+secret_values = {
+  APP_KEYS            = "REPLACE_WITH_RANDOM_KEYS"
+  API_TOKEN_SALT      = "REPLACE_WITH_RANDOM_SECRET"
+  ADMIN_JWT_SECRET    = "REPLACE_WITH_RANDOM_SECRET"
+  TRANSFER_TOKEN_SALT = "REPLACE_WITH_RANDOM_SECRET"
+  JWT_SECRET          = "REPLACE_WITH_RANDOM_SECRET"
+  ENCRYPTION_KEY      = "REPLACE_WITH_RANDOM_SECRET"
+  DB_PASSWORD         = "REPLACE_WITH_RANDOM_PASSWORD"
+}

@@ -20,6 +20,7 @@
     "@strapi/plugin-users-permissions": "5.61.0",
     "@strapi/strapi": "5.61.0",
     "better-sqlite3": "12.11.1",
+    "pg": "^8.23.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.30.3",
@@ -38,5 +39,11 @@
   "strapi": {
     "uuid": "a914a7fb-cb6f-4041-9b91-776162b84511",
     "installId": "37181703718fc5e4c57bde6225d9fbc37b508c43da17282c3ac8d364530420cd"
+  },
+  "allowScripts": {
+    "better-sqlite3@12.11.1": true,
+    "@swc/core@1.16.22": true,
+    "esbuild@0.28.2": true,
+    "esbuild@0.25.12": true
   }
 }
